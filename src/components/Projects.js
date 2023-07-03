@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/quantum.png";
+import projImg2 from "../assets/img/befriends.png";
+import projImg3 from "../assets/img/escanor.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,35 +11,20 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "Quantum",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      title: "BeFriends",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "Escanor",
       description: "Design & Development",
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    }
   ];
 
   return (
@@ -54,7 +39,7 @@ export const Projects = () => {
                 <p>Here are some of the projects i made so far.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
+                    {/* <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -62,7 +47,7 @@ export const Projects = () => {
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
