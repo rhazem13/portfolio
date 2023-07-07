@@ -20,7 +20,7 @@ export const Projects = () => {
       title: "BeFriends",
       description: "Live Preview",
       imgUrl: projImg2,
-      projectUrl: "https://befriends-it7g.onrender.com/#/feed",
+      projectUrl: "https://befriends-it7g.onrender.com",
     },
     {
       title: "Escanor",
